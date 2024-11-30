@@ -51,3 +51,18 @@ li {/* styling each task */
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
+
+#task-list { /* style the list container */
+    max-width: 400px; /* set a maximum width for the list */
+    word-wrap: break-word; /* break long words to fit the box */
+    overflow-wrap: break-word; /* for better browser compatibility */
+    margin: 0 auto; /* center the list */
+    padding: 0;
+    list-style-type: none; /* remove bullet points */
+}
+
+#task-list li { /* style each task */
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /*adds a line between tasks */
+    background-color: #f9f9f9; /* light background for better readability */
+}  

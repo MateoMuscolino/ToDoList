@@ -12,7 +12,7 @@ document.getElementById('add-task-button').addEventListener('click', function ()
       // create the "Done" button
         const doneButton = document.createElement('button');
         doneButton.textContent = 'Done';
-        doneButton.style.marginLeft = '30px'; // Add some spacing
+        doneButton.style.marginLeft = '10px'; // Add some spacing
 
       // add functionality to the "Done" button
         doneButton.addEventListener('click', function () {
@@ -22,7 +22,7 @@ document.getElementById('add-task-button').addEventListener('click', function ()
           newTask.style.textDecoration = 'line-through'; // mark as done
         }
     });
-    
+
       // append the button to the task
     newTask.appendChild(doneButton);
 
