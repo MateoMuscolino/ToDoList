@@ -65,4 +65,9 @@ li {/* styling each task */
     padding: 10px;
     border-bottom: 1px solid #ccc; /*adds a line between tasks */
     background-color: #f9f9f9; /* light background for better readability */
-}  
+} 
+
+.done {
+    text-decoration: line-through;
+    color: rgb(128, 128, 128); /* make it visually distinct */
+}
