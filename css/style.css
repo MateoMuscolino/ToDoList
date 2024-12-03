@@ -69,5 +69,5 @@ li {/* styling each task */
 
 .done {
     text-decoration: line-through;
-    color: rgb(128, 128, 128); /* make it visually distinct */
+    color: rgb(79, 209, 19); /* make it visually distinct */
 }

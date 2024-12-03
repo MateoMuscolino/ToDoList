@@ -19,8 +19,10 @@ document.getElementById('add-task-button').addEventListener('click', function ()
             // toggle the task completion
             if (newTask.classList.contains('done')) {
                 newTask.classList.remove('done');
+                doneButton.textContent = 'Done'; // i change the button text
             } else {
                 newTask.classList.add('done');
+                doneButton.textContent = 'Undone'; // i change the button text to undone i want to change it
             }
         });
 
