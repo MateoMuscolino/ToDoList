@@ -26,10 +26,21 @@ document.getElementById('add-task-button').addEventListener('click', function ()
             }
         });
 
-        // append the button to the task
-        newTask.appendChild(doneButton);
+        // create the delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.style.marginLeft = '10px'; // add some spacing
 
-        // add the task to the list
+        // add functionality to the delete button
+        deleteButton.addEventListener('click',function(){
+            taskList.removeChild(newTask); // remove the task from the list
+        });
+
+        // append the buttons
+        newTask.appendChild(doneButton);
+        newTask.appendChild(deleteButton);
+
+        //add the task to the list
         taskList.appendChild(newTask);
         taskInput.value = ''; // clear the input box
     } else {
