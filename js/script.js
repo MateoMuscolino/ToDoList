@@ -1,6 +1,7 @@
 document.getElementById('add-task-button').addEventListener('click', function () {
     const taskInput = document.getElementById('task-input');
     const taskText = taskInput.value.trim(); // i remove the spaces with trim
+    const errorMessage = document.getElementById('error-message');
     
     if (taskText !== '') {
         const taskList = document.getElementById('task-list');
@@ -43,7 +44,10 @@ document.getElementById('add-task-button').addEventListener('click', function ()
         //add the task to the list
         taskList.appendChild(newTask);
         taskInput.value = ''; // clear the input box
+        errorMessage.style.display = 'none'; // hide erro message
     } else {
-        alert('Please enter a task before adding!');
+        // show error message
+        errorMessage.textContent = 'Please enter a task before adding!';
+        errorMessage.style.display = 'block';
     }
 });

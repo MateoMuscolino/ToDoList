@@ -1,1 +1,1 @@
-#FIX: alert if the user doesnt write something in the box
+#ADD: Information about me
