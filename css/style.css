@@ -71,3 +71,23 @@ li {/* styling each task */
     text-decoration: line-through;
     color: rgb(79, 209, 19); /* make it visually distinct */
 }
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff5733;
+    font-size: 14px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+#footer a { /* stling the links separately*/
+    color: #007bff;
+    text-decoration: none;
+}
+
+#footer a:hover { /* styling the <a> (links) elements inside the <footer> */
+    text-decoration: underline;
+}
