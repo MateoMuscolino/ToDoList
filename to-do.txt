@@ -1,2 +1,1 @@
 #ADD: Put an icon for linkedin contact
-#FIX: Downsize the button of create and remove

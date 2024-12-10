@@ -1,13 +1,13 @@
-body { /* styling the body of the webpage */
+body {
     font-family: Arial, sans-serif;
     background-color: #282c34;
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin: 0;
     min-height: 100vh;
 }
+
 
 .todo-container { /* styling de container to-do list */
     background: #fff;
@@ -16,6 +16,7 @@ body { /* styling the body of the webpage */
     border-radius: 8px; /*i make the corners rounded*/
     width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* i make like a 3d effect with a shadow*/
+    margin: 20px auto;
 }
 
 h1 { /*center the h1*/
@@ -92,11 +93,11 @@ li {/* styling each task */
     text-align: center;
     padding: 10px;
     background-color: #ff5733;
-    font-size: 14px;
-    position:fixed;
-    bottom: 0;
+    font-size: 12px;
     width: 100%;
-    border-top: 1px solid #333;
+    border-top: 2px solid #333;
+    bottom: 0; /* Ensure it stays at the bottom naturally */
+    margin: 0;
 }
 
 #footer a { /* stling the links separately*/
@@ -106,4 +107,8 @@ li {/* styling each task */
 
 #footer a:hover { /* styling the <a> (links) elements inside the <footer> */
     text-decoration: underline;
+}
+
+.main-content {
+    flex-grow: 1;
 }
