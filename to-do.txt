@@ -1,3 +1,2 @@
 #ADD: Put an icon for linkedin contact
-#FIX: When i create a lot of tasks in the web i cannot see them
 #FIX: Downsize the button of create and remove

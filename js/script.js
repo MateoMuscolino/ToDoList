@@ -13,17 +13,17 @@ document.getElementById('add-task-button').addEventListener('click', function ()
         // create the "Done" button
         const doneButton = document.createElement('button');
         doneButton.textContent = 'Done';
-        doneButton.style.marginLeft = '10px'; // add some spacing
+        doneButton.classList.add('done-button');
 
         // add functionality to the "Done" button
         doneButton.addEventListener('click', function () {
             // toggle the task completion
             if (newTask.classList.contains('done')) {
                 newTask.classList.remove('done');
-                doneButton.textContent = 'Done'; // i change the button text
+                doneButton.textContent = 'Done'; // change the button text
             } else {
                 newTask.classList.add('done');
-                doneButton.textContent = 'Undone'; // i change the button text to undone i want to change it
+                doneButton.textContent = 'Undone'; // change the button text to undone i want to change it
             }
         });
 
@@ -31,6 +31,7 @@ document.getElementById('add-task-button').addEventListener('click', function ()
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
         deleteButton.style.marginLeft = '10px'; // add some spacing
+        deleteButton.classList.add('delete-button');
 
         // add functionality to the delete button
         deleteButton.addEventListener('click',function(){
