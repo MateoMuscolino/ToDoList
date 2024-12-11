@@ -17,6 +17,7 @@ body {
     width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* i make like a 3d effect with a shadow*/
     margin: 20px auto;
+    margin-top: 300px;
 }
 
 h1 { /*center the h1*/
