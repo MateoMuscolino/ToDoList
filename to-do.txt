@@ -1,2 +1,1 @@
-#ADD: Put an icon for linkedin contact
-#FIX: Position of the to do list
+#####Tasks To Do#####

@@ -102,14 +102,22 @@ li {/* styling each task */
 }
 
 #footer a { /* stling the links separately*/
-    color: #007bff;
+    color: #fff;
     text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* space between the icon and the text */
 }
 
 #footer a:hover { /* styling the <a> (links) elements inside the <footer> */
-    text-decoration: underline;
+    color: #0077b5;
 }
 
+#footer i{
+    font-size: 16px;
+}
 .main-content {
     flex-grow: 1;
 }
